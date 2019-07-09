@@ -1,0 +1,12 @@
+tell application "Microsoft Excel"
+	activate
+	
+	make new workbook
+	make new worksheet at end of active workbook
+	
+	tell first window to set width to 480
+	tell first window to set height to 640
+	
+	set column width of range "A:AH" to 2.17
+	set row height of range "1:30" to 18.0
+end tell
